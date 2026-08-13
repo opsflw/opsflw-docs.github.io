@@ -10,22 +10,28 @@
       
       
       
+        <link rel="canonical" href="https://docs.opsflw.io/elastic/latest/elastic-stack-deployment/platform-components/">
       
       
+        <link rel="prev" href="../shared-responsibility/">
       
-      <link rel="icon" href="/elastic/latest/assets/images/favicon.png">
+      
+        <link rel="next" href="../deployment-field-reference/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.33">
     
     
       
-        <title>Opsflw Managed Elasticsearch Platform</title>
+        <title>Platform components - Opsflw Managed Elasticsearch Platform</title>
       
     
     
-      <link rel="stylesheet" href="/elastic/latest/assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="/elastic/latest/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,16 +50,25 @@
       
     
     
-      <link rel="stylesheet" href="/elastic/latest/stylesheets/extra-1.0.2.css">
+      <link rel="stylesheet" href="../../stylesheets/extra-1.0.2.css">
     
-    <script>__md_scope=new URL("/elastic/latest",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -70,6 +85,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#platform-components" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -98,7 +118,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/elastic/latest/." title="Opsflw Managed Elasticsearch Platform" class="md-header__button md-logo" aria-label="Opsflw Managed Elasticsearch Platform" data-md-component="logo">
+    <a href="../.." title="Opsflw Managed Elasticsearch Platform" class="md-header__button md-logo" aria-label="Opsflw Managed Elasticsearch Platform" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -118,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Platform components
             
           </span>
         </div>
@@ -207,7 +227,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/elastic/latest/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -226,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/elastic/latest/elastic-stack-deployment/prerequisites-and-planning/" class="md-tabs__link">
+        <a href="../prerequisites-and-planning/" class="md-tabs__link">
           
   
     
@@ -246,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/elastic/latest/elastic-stack-deployment/deploy-first-instance/" class="md-tabs__link">
+        <a href="../deploy-first-instance/" class="md-tabs__link">
           
   
     
@@ -266,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/elastic/latest/elastic-stack-deployment/next-steps/" class="md-tabs__link">
+        <a href="../next-steps/" class="md-tabs__link">
           
   
     
@@ -286,7 +306,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/elastic/latest/elastic-stack-deployment/operations-and-lifecycle-management/" class="md-tabs__link">
+        <a href="../operations-and-lifecycle-management/" class="md-tabs__link">
           
   
     
@@ -306,7 +326,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/elastic/latest/elastic-stack-deployment/troubleshooting-and-support/" class="md-tabs__link">
+        <a href="../troubleshooting-and-support/" class="md-tabs__link">
           
   
     
@@ -322,11 +342,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/elastic/latest/elastic-stack-deployment/architecture-and-deployment-models/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../architecture-and-deployment-models/" class="md-tabs__link">
           
   
     
@@ -361,7 +383,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/elastic/latest/." title="Opsflw Managed Elasticsearch Platform" class="md-nav__button md-logo" aria-label="Opsflw Managed Elasticsearch Platform" data-md-component="logo">
+    <a href="../.." title="Opsflw Managed Elasticsearch Platform" class="md-nav__button md-logo" aria-label="Opsflw Managed Elasticsearch Platform" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -379,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/prerequisites-and-planning/" class="md-nav__link">
+      <a href="../prerequisites-and-planning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/marketplace-prerequisites/" class="md-nav__link">
+      <a href="../marketplace-prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -493,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/profiles-overview/" class="md-nav__link">
+      <a href="../profiles-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -514,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/network-design-prerequisites/" class="md-nav__link">
+      <a href="../network-design-prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -535,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/appendix-limits-references-checklists/" class="md-nav__link">
+      <a href="../appendix-limits-references-checklists/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/deploy-first-instance/" class="md-nav__link">
+      <a href="../deploy-first-instance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/deployment-field-reference/" class="md-nav__link">
+      <a href="../deployment-field-reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/deployment-status/" class="md-nav__link">
+      <a href="../deployment-status/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -676,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/deployment-outputs/" class="md-nav__link">
+      <a href="../deployment-outputs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -758,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/next-steps/" class="md-nav__link">
+      <a href="../next-steps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -779,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/reset-admin-password/" class="md-nav__link">
+      <a href="../reset-admin-password/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -846,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/public-dns/" class="md-nav__link">
+      <a href="../public-dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -867,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/private-access/" class="md-nav__link">
+      <a href="../private-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/public-dns/" class="md-nav__link">
+      <a href="../public-dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/private-dns/" class="md-nav__link">
+      <a href="../private-dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -992,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/private-tls/" class="md-nav__link">
+      <a href="../private-tls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/secure-access-kibana-elasticsearch/" class="md-nav__link">
+      <a href="../secure-access-kibana-elasticsearch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1093,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/operations-and-lifecycle-management/" class="md-nav__link">
+      <a href="../operations-and-lifecycle-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1160,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/users-and-roles/" class="md-nav__link">
+      <a href="../users-and-roles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1181,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/single-sign-on/" class="md-nav__link">
+      <a href="../single-sign-on/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1258,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/data-onboarding/" class="md-nav__link">
+      <a href="../data-onboarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1279,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/onboard-observability-data/" class="md-nav__link">
+      <a href="../onboard-observability-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1300,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/onboard-search-data/" class="md-nav__link">
+      <a href="../onboard-search-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1373,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/search-and-visualize/" class="md-nav__link">
+      <a href="../search-and-visualize/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1458,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/health-and-capacity/" class="md-nav__link">
+      <a href="../health-and-capacity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1479,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/maintenance/" class="md-nav__link">
+      <a href="../maintenance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1500,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/license-and-feature-management/" class="md-nav__link">
+      <a href="../license-and-feature-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1521,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/snapshots-and-restore/" class="md-nav__link">
+      <a href="../snapshots-and-restore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1542,7 +1564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/upgrades/" class="md-nav__link">
+      <a href="../upgrades/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1563,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/certificate-renewal/" class="md-nav__link">
+      <a href="../certificate-renewal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1584,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/delete-application/" class="md-nav__link">
+      <a href="../delete-application/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1672,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/troubleshooting-and-support/" class="md-nav__link">
+      <a href="../troubleshooting-and-support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1693,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/troubleshoot-deployment/" class="md-nav__link">
+      <a href="../troubleshoot-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1714,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/troubleshoot-connectivity/" class="md-nav__link">
+      <a href="../troubleshoot-connectivity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1735,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/troubleshoot-elasticsearch/" class="md-nav__link">
+      <a href="../troubleshoot-elasticsearch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1756,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/get-support/" class="md-nav__link">
+      <a href="../get-support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1781,8 +1803,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1811,19 +1835,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1834,7 +1861,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Reference
@@ -1848,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/architecture-and-deployment-models/" class="md-nav__link">
+      <a href="../architecture-and-deployment-models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1869,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/shared-responsibility/" class="md-nav__link">
+      <a href="../shared-responsibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,10 +1914,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/platform-components/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Platform components
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1899,6 +1946,167 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#one-to-one-component-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-to-one component map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component descriptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component descriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-computed-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computed values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-deployment-postrequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment postrequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-deployment-prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-elastic-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elastic connectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elasticsearch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-fleet-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fleet Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ingress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kibana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-logstash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logstash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-elastic-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elastic Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secrets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-a-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify a component
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1911,7 +2119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/deployment-field-reference/" class="md-nav__link">
+      <a href="../deployment-field-reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1932,7 +2140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/lifecycle-state-reference/" class="md-nav__link">
+      <a href="../lifecycle-state-reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1953,7 +2161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/roles-and-permissions/" class="md-nav__link">
+      <a href="../roles-and-permissions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1974,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/profiles-overview/" class="md-nav__link">
+      <a href="../profiles-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1995,7 +2203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/compatibility/" class="md-nav__link">
+      <a href="../compatibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2016,7 +2224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/appendix-limits-references-checklists/" class="md-nav__link">
+      <a href="../appendix-limits-references-checklists/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2037,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/release-notes/" class="md-nav__link">
+      <a href="../release-notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2058,7 +2266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/elastic/latest/elastic-stack-deployment/glossary/" class="md-nav__link">
+      <a href="../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2096,6 +2304,157 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#one-to-one-component-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-to-one component map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component descriptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component descriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-computed-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computed values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-deployment-postrequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment postrequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-deployment-prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-elastic-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elastic connectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elasticsearch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-fleet-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fleet Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ingress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kibana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-logstash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logstash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-elastic-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elastic Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secrets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-a-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify a component
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2107,8 +2466,270 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="platform-components">Platform components</h1>
+<p>The platform release deploys twelve component applications. This page provides
+one customer-facing description and one stable documentation anchor for each
+application.</p>
+<p>The application identifiers are implementation identifiers, not Azure resource
+names. Do not use them to reconstruct resource IDs, hostnames, credentials, or
+other deployment-specific values. Obtain those values from
+<a href="../deployment-outputs/">deployment outputs</a>.</p>
+<h2 id="one-to-one-component-map">One-to-one component map</h2>
+<table>
+<thead>
+<tr>
+<th>Argo CD application</th>
+<th>Customer-facing purpose</th>
+<th>Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>computed-values</code></td>
+<td>Produces the approved configuration values consumed by the other component applications</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>deployment-postrequisites</code></td>
+<td>Completes release-defined configuration and readiness work after the main services are deployed</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>deployment-prerequisites</code></td>
+<td>Establishes release-defined dependencies and readiness gates required before the main services deploy</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>elastic-connectors</code></td>
+<td>Supplies supported Elastic connector services for approved external content or service integrations</td>
+<td>Plan, version, license, and configuration dependent</td>
+</tr>
+<tr>
+<td><code>elasticsearch</code></td>
+<td>Stores, indexes, searches, and analyzes customer data</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>fleet-server</code></td>
+<td>Coordinates enrolled Elastic Agents through Fleet</td>
+<td>Plan and configuration dependent</td>
+</tr>
+<tr>
+<td><code>infrastructure</code></td>
+<td>Supplies the shared Azure runtime, storage, identity, and networking foundation</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>ingress</code></td>
+<td>Presents approved HTTPS endpoints for enabled platform services</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>kibana</code></td>
+<td>Provides the browser interface for search, dashboards, administration, and enabled Elastic solutions</td>
+<td>Every deployment</td>
+</tr>
+<tr>
+<td><code>logstash</code></td>
+<td>Receives and processes events through configured input, filter, and output pipelines</td>
+<td>Plan and configuration dependent</td>
+</tr>
+<tr>
+<td><code>elastic-agent</code></td>
+<td>Runs the platform-managed Elastic Agent workload and its approved policy</td>
+<td>Release and configuration dependent</td>
+</tr>
+<tr>
+<td><code>secrets</code></td>
+<td>Supplies protected secret and certificate material required by platform services</td>
+<td>Every deployment</td>
+</tr>
+</tbody>
+</table>
+<p>A component listed as plan-dependent is not available merely because its Argo
+CD application exists in platform source. Confirm the deployed plan, version,
+license, status, and published endpoint before using it.</p>
+<h2 id="component-descriptions">Component descriptions</h2>
+<h3 id="component-computed-values">Computed values</h3>
+<p><strong>Argo CD application:</strong> <code>computed-values</code></p>
+<p>Computed values derives the shared, release-approved configuration consumed by
+other component applications. Its customer-facing result is consistent
+configuration across the deployment, including values later exposed through
+supported status and output views.</p>
+<p>Customers do not edit generated values or use this application as a source for
+resource names. Change deployment configuration only through a documented
+managed-application action.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-computed-values</code></p>
+<h3 id="component-deployment-postrequisites">Deployment postrequisites</h3>
+<p><strong>Argo CD application:</strong> <code>deployment-postrequisites</code></p>
+<p>Deployment postrequisites performs the release-defined configuration and
+readiness work that can run only after the main platform services are present.
+The exact tasks are version-specific; the customer-facing outcome is a platform
+that can advance from infrastructure deployment toward service readiness.</p>
+<p>Customers should follow the managed application's readiness state rather than
+attempting to run or modify individual post-deployment tasks.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-deployment-postrequisites</code></p>
+<h3 id="component-deployment-prerequisites">Deployment prerequisites</h3>
+<p><strong>Argo CD application:</strong> <code>deployment-prerequisites</code></p>
+<p>Deployment prerequisites establishes the release-defined dependencies and
+readiness gates required before Elasticsearch and the other main services can
+be configured. The customer-facing outcome is early validation of the
+foundation required by the selected plan.</p>
+<p>When this component does not become ready, review the managed application's
+status and deployment evidence. Do not bypass the gate by changing managed
+resources directly.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-deployment-prerequisites</code></p>
+<h3 id="component-elastic-connectors">Elastic connectors</h3>
+<p><strong>Argo CD application:</strong> <code>elastic-connectors</code></p>
+<p>Elastic connectors supplies the connector service used by supported Elastic
+workflows that synchronize content or interact with approved external systems.
+A deployed connector service does not automatically configure a data source,
+credential, synchronization job, or external model provider.</p>
+<p>Before use, verify the selected connector, Elastic version and license,
+outbound connectivity, credential owner, source permissions, and data
+classification. Elastic documents connector behavior in the
+<a href="https://www.elastic.co/docs/reference/search-connectors/">Elasticsearch connectors reference</a>.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-elastic-connectors</code></p>
+<h3 id="component-elasticsearch">Elasticsearch</h3>
+<p><strong>Argo CD application:</strong> <code>elasticsearch</code></p>
+<p>Elasticsearch is the platform's distributed search and analytics engine,
+scalable data store, and vector database. It stores customer indices and data
+streams and provides APIs for indexing, search, aggregations, ingest pipelines,
+security, and supported lifecycle operations.</p>
+<p>Customers own mappings, templates, data streams, retention, API access, query
+behavior, and data governance. Use the deployment-provided Elasticsearch
+hostname rather than an internal Kubernetes or Azure address. See the official
+<a href="https://www.elastic.co/docs/reference/elasticsearch">Elasticsearch reference</a>.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-elasticsearch</code></p>
+<h3 id="component-fleet-server">Fleet Server</h3>
+<p><strong>Argo CD application:</strong> <code>fleet-server</code></p>
+<p>Fleet Server is the control-plane service through which enrolled Elastic Agents
+receive policies and report status to Fleet. Collected events are stored in
+Elasticsearch, not in Fleet Server.</p>
+<p>Use this component only when deployment outputs expose an approved Fleet
+endpoint. Customers remain responsible for their agent installations, source
+permissions, certificate trust, policy approval, and compatible versions. See
+<a href="https://www.elastic.co/docs/reference/fleet">Fleet and Elastic Agent</a>.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-fleet-server</code></p>
+<h3 id="component-infrastructure">Infrastructure</h3>
+<p><strong>Argo CD application:</strong> <code>infrastructure</code></p>
+<p>Infrastructure supplies the shared Azure foundation consumed by the platform
+services. Depending on the approved release, that foundation can include the
+managed runtime, storage, identities, and networking resources represented in
+the managed resource group.</p>
+<p>The exact resource inventory is release-specific. Customers own the Azure
+subscription, policy, quota, approved connectivity, and Azure charges, but
+must not modify individual managed resources unless a documented action
+explicitly permits it.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-infrastructure</code></p>
+<h3 id="component-ingress">Ingress</h3>
+<p><strong>Argo CD application:</strong> <code>ingress</code></p>
+<p>Ingress presents the approved HTTPS routes for enabled services such as
+Elasticsearch, Kibana, Fleet Server, or Logstash. It connects the platform's
+internal service routing to the public or private access model selected for the
+deployment.</p>
+<p>Customers configure the required network path, DNS, TLS trust, and client
+access. The deployment-provided service hostname remains authoritative; do not
+connect clients to an internal load balancer, pod, or Kubernetes service name.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-ingress</code></p>
+<h3 id="component-kibana">Kibana</h3>
+<p><strong>Argo CD application:</strong> <code>kibana</code></p>
+<p>Kibana is the browser interface for exploring data, creating dashboards and
+visualizations, administering supported Elasticsearch features, managing
+access, and using enabled Elastic solutions.</p>
+<p>Kibana reads from and administers Elasticsearch; it is not a separate copy of
+the customer's indexed data. Customers use the deployment-provided Kibana
+hostname and receive only the privileges assigned to their identity.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-kibana</code></p>
+<h3 id="component-logstash">Logstash</h3>
+<p><strong>Argo CD application:</strong> <code>logstash</code></p>
+<p>Logstash receives, transforms, enriches, buffers, and routes events through
+configured input, filter, and output pipeline stages. It is useful when an
+ingestion flow needs processing beyond a direct Elasticsearch API or an
+approved agent integration.</p>
+<p>Use the managed Logstash service only when the selected plan publishes a
+supported endpoint and pipeline workflow. Customers own source behavior,
+pipeline requirements, parsing validation, credential rotation, and failure
+handling. See <a href="https://www.elastic.co/docs/reference/logstash/how-logstash-works">how Logstash works</a>.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-logstash</code></p>
+<h3 id="component-elastic-agent">Elastic Agent</h3>
+<p><strong>Argo CD application:</strong> <code>elastic-agent</code></p>
+<p>This application deploys the platform-managed Elastic Agent workload and its
+approved policy. Its purpose and enabled integrations depend on the platform
+release and configuration.</p>
+<p>This component is distinct from Elastic Agents that customers install on their
+own hosts or Kubernetes clusters. Customers operate those external agents and
+must verify Fleet enrollment, endpoint reachability, version compatibility,
+resource use, and source permissions.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-elastic-agent</code></p>
+<h3 id="component-secrets">Secrets</h3>
+<p><strong>Argo CD application:</strong> <code>secrets</code></p>
+<p>Secrets supplies the protected secret, key, and certificate material required
+by platform services and supported TLS or integration workflows. Secret values
+must not appear in deployment outputs, documentation, source control, or
+support evidence.</p>
+<p>Customers use only documented certificate, identity, or credential actions.
+Do not read, replace, or copy secret material directly from managed resources.</p>
+<p><strong>Path and anchor:</strong>
+<code>/elastic/latest/elastic-stack-deployment/platform-components/#component-secrets</code></p>
+<h2 id="verify-a-component">Verify a component</h2>
+<p>For any component:</p>
+<ol>
+<li>Confirm that the component is included in the approved Marketplace plan.</li>
+<li>Check the managed application's platform version and readiness state.</li>
+<li>Use deployment outputs to find customer-facing endpoints or required
+   actions.</li>
+<li>Confirm the Elastic version, license, and compatibility where applicable.</li>
+<li>Record the customer and iVedha ownership boundary.</li>
+<li>Treat the component as unavailable until all required evidence is present.</li>
+</ol>
+<p>For placement and data flow, see the
+<a href="../architecture-and-deployment-models/">architecture and deployment model</a>.
+For customer and operator responsibilities, see
+<a href="../shared-responsibility/">shared responsibility</a>.</p>
+
+  
+  
+  
+
+
+  <aside class="md-source-file" aria-label="Document metadata">
+    
+      <span class="md-source-file__fact">
+        <strong>Last verified:</strong> 2026-07-31
+      </span>
+    
+    
+      <span class="md-source-file__fact">
+        <strong>Published:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2026</span>
+      </span>
+    
+    
+      <span class="md-source-file__fact">
+        <strong>Applies to:</strong> Current Marketplace release
+      </span>
+    
+  </aside>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -2142,15 +2763,17 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/elastic/latest", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "/elastic/latest/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/elastic/latest/assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
-        <script src="/elastic/latest/javascripts/vendor/vega-6.2.0.min.js"></script>
+        <script src="../../javascripts/vendor/vega-6.2.0.min.js"></script>
       
-        <script src="/elastic/latest/javascripts/vega-diagrams-1.0.1.js"></script>
+        <script src="../../javascripts/vega-diagrams-1.0.1.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
