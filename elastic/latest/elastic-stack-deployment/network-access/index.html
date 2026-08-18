@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.opsflw.io/elastic/latest/elastic-stack-deployment/single-sign-on/">
+        <link rel="canonical" href="https://docs.opsflw.io/elastic/latest/elastic-stack-deployment/network-access/">
       
       
-        <link rel="prev" href="../users-and-roles/">
+        <link rel="prev" href="../reset-admin-password/">
       
       
-        <link rel="next" href="../data-onboarding/">
+        <link rel="next" href="../public-dns/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Configure single sign-on - Opsflw Managed Elasticsearch Platform</title>
+        <title>Configure network access - Opsflw Managed Elasticsearch Platform</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configure-single-sign-on" class="md-skip">
+        <a href="#configure-network-access" class="md-skip">
           Skip to content
         </a>
       
@@ -138,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configure single sign-on
+              Configure network access
             
           </span>
         </div>
@@ -282,10 +282,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../next-steps/" class="md-tabs__link">
           
   
@@ -302,12 +304,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../operations-and-lifecycle-management/" class="md-tabs__link">
           
   
@@ -746,8 +746,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -766,19 +768,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -789,7 +794,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Next Steps
@@ -842,10 +847,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../network-access/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configure network access
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -854,6 +879,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#if-public-access-is-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      If public access is enabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-private-access-is-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      If private access is required
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-the-network-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify the network path
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next step
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -877,17 +958,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1008,10 +1092,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1028,22 +1110,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1054,7 +1133,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Operate
@@ -1086,10 +1165,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1101,21 +1178,18 @@
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
         
           
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1126,7 +1200,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Access & security
@@ -1158,30 +1232,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Configure single sign-on
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../single-sign-on/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1190,98 +1244,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Before you begin
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#register-the-application-in-microsoft-entra" class="md-nav__link">
-    <span class="md-ellipsis">
-      Register the application in Microsoft Entra
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-sso-through-ivedha-ai-chat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure SSO through iVedha AI chat
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-entra-groups-to-elastic-roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Map Entra groups to Elastic roles
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-single-sign-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test single sign-on
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-and-api-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application and API access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-sso-does-not-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      If SSO does not work
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next step
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1317,20 +1279,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
         
           
-          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1456,20 +1415,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
-          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1544,20 +1500,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
         
           
-          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2207,63 +2160,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
+  <a href="#if-public-access-is-enabled" class="md-nav__link">
     <span class="md-ellipsis">
-      Before you begin
+      If public access is enabled
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#register-the-application-in-microsoft-entra" class="md-nav__link">
+  <a href="#if-private-access-is-required" class="md-nav__link">
     <span class="md-ellipsis">
-      Register the application in Microsoft Entra
+      If private access is required
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-sso-through-ivedha-ai-chat" class="md-nav__link">
+  <a href="#verify-the-network-path" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure SSO through iVedha AI chat
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-entra-groups-to-elastic-roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Map Entra groups to Elastic roles
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-single-sign-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test single sign-on
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-and-api-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application and API access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-sso-does-not-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      If SSO does not work
+      Verify the network path
     </span>
   </a>
   
@@ -2293,119 +2210,47 @@
                   
 
 
-<h1 id="configure-single-sign-on">Configure single sign-on</h1>
-<p>Use Microsoft Entra ID single sign-on to authenticate organization users to Kibana.</p>
-<p>Platform SSO configuration is performed through the iVedha AI chat:</p>
-<p><code>https://chat.ivedha.cloud</code></p>
-<p>Microsoft Entra authenticates the user. Elastic roles and role mappings determine what the authenticated user can access.</p>
-<h2 id="before-you-begin">Before you begin</h2>
-<p>Coordinate with:</p>
-<ul>
-<li>a Microsoft Entra application administrator;</li>
-<li>an Elastic security administrator.</li>
-</ul>
-<p>You will need:</p>
-<ul>
-<li>your Microsoft Entra tenant ID;</li>
-<li>an Entra application registration;</li>
-<li>the application client ID;</li>
-<li>a client credential;</li>
-<li>the redirect URI provided for your deployment;</li>
-<li>the Entra groups that will be mapped to Elastic roles.</li>
-</ul>
-<p>Do not create the redirect URI from examples or naming conventions. Use the exact value provided for your deployment.</p>
-<h2 id="register-the-application-in-microsoft-entra">Register the application in Microsoft Entra</h2>
-<p>In Microsoft Entra:</p>
-<ol>
-<li>Open <strong>App registrations</strong>.</li>
-<li>Create an application registration for the Elastic platform.</li>
-<li>Configure the application as required by your organization's identity policy.</li>
-<li>Add the exact <strong>Web redirect URI</strong> provided for the deployment.</li>
-<li>Create the client credential required for the integration.</li>
-<li>Configure the user and group claims required for access mapping.</li>
-</ol>
-<p>Store the client secret securely.</p>
-<p>Do not place the client secret in documentation, tickets, email, or screenshots.</p>
-<h2 id="configure-sso-through-ivedha-ai-chat">Configure SSO through iVedha AI chat</h2>
-<ol>
-<li>Sign in to:</li>
-</ol>
-<p><code>https://chat.ivedha.cloud</code></p>
-<ol>
-<li>Select or identify the deployment.</li>
-<li>Ask the assistant to configure <strong>single sign-on</strong> or <strong>Microsoft Entra OIDC</strong>.</li>
-<li>Complete identity verification when requested.</li>
-<li>Provide the requested Entra configuration values.</li>
-<li>Provide the client credential only through the protected credential workflow.</li>
-<li>Review and confirm the requested change.</li>
-<li>Wait for the platform to apply and synchronize the SSO configuration.</li>
-</ol>
-<p>Allow a few minutes for the configuration to become active.</p>
-<h2 id="map-entra-groups-to-elastic-roles">Map Entra groups to Elastic roles</h2>
-<p>Successful authentication does not automatically grant access to Elasticsearch or Kibana.</p>
-<p>Create the required <a href="../users-and-roles/">Elastic roles</a>, then map approved Microsoft Entra groups to those roles.</p>
-<p>Typical mappings can provide:</p>
-<ul>
-<li>read-only access;</li>
-<li>dashboard access;</li>
-<li>data administration;</li>
-<li>platform administration.</li>
-</ul>
-<p>Use least-privilege mappings and avoid assigning broad administrative access to all authenticated users.</p>
-<h2 id="test-single-sign-on">Test single sign-on</h2>
-<p>Test with a normal user account before relying on SSO for administrative access.</p>
+<h1 id="configure-network-access">Configure network access</h1>
+<p>Configure the network path for the access model selected during deployment.</p>
+<p>The <strong>Your deployment is ready</strong> notification provides the public and private
+endpoints available for the deployment.</p>
+<h2 id="if-public-access-is-enabled">If public access is enabled</h2>
+<p>Public endpoints are available over HTTPS.</p>
 <p>Confirm that:</p>
-<ol>
-<li>opening Kibana redirects the user to Microsoft Entra;</li>
-<li>authentication completes successfully;</li>
-<li>the user returns to Kibana;</li>
-<li>the user can access only the intended Kibana spaces and Elasticsearch data;</li>
-<li>a user without an approved role mapping does not receive unintended access.</li>
-</ol>
-<p>Keep the administrator credential available until SSO has been fully validated.</p>
-<h2 id="application-and-api-access">Application and API access</h2>
-<p>OIDC SSO is primarily intended for interactive Kibana users.</p>
-<p>Applications, integrations, and Elasticsearch REST clients should use an appropriate supported credential such as an API key rather than an interactive SSO login.</p>
-<h2 id="if-sso-does-not-work">If SSO does not work</h2>
-<p>Common causes include:</p>
-<table>
-<thead>
-<tr>
-<th>Symptom</th>
-<th>Check</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Entra reports a redirect URI mismatch</td>
-<td>Confirm the exact deployment-provided redirect URI is registered</td>
-</tr>
-<tr>
-<td>Authentication succeeds but Kibana denies access</td>
-<td>Check Entra group claims and Elastic role mappings</td>
-</tr>
-<tr>
-<td>Authentication fails after credential rotation</td>
-<td>Confirm the active client credential and allow time for synchronization</td>
-</tr>
-<tr>
-<td>User repeatedly returns to the sign-in page</td>
-<td>Check the Entra application configuration and deployment SSO settings</td>
-</tr>
-<tr>
-<td>Some users do not receive expected group access</td>
-<td>Confirm the required group claims are present</td>
-</tr>
-</tbody>
-</table>
-<p>For assistance:</p>
 <ul>
-<li>AI chat: <code>https://chat.ivedha.cloud</code></li>
-<li>Support portal: <code>https://support.ivedha.com/</code></li>
+<li>the required client networks are allowed to reach the public endpoints;</li>
+<li>outbound HTTPS on TCP port 443 is permitted;</li>
+<li>any organization firewall, proxy, or access restrictions allow the required
+  service hostnames.</li>
 </ul>
-<p>Provide the deployment reference from your <strong>Your deployment is ready</strong> notification.</p>
+<p>Do not configure DNS on this page. DNS is handled in the next step.</p>
+<p>Continue to <a href="../public-dns/">configure public DNS</a>.</p>
+<h2 id="if-private-access-is-required">If private access is required</h2>
+<p>Create an Azure Private Endpoint that connects your customer network to the
+platform's Private Link Service.</p>
+<p>You need:</p>
+<ul>
+<li>the Private Link Service resource ID provided for the deployment;</li>
+<li>an Azure VNet and subnet where the Private Endpoint will be created;</li>
+<li>network connectivity from the required client networks to that subnet.</li>
+</ul>
+<p>Follow <a href="../private-access/">Create a Private Endpoint</a>.</p>
+<p>After the Private Endpoint is approved and reachable, continue to
+<a href="../private-dns/">configure private DNS</a>.</p>
+<h2 id="verify-the-network-path">Verify the network path</h2>
+<p>Before moving to DNS configuration, confirm that the required network path
+exists.</p>
+<p>For public access, confirm that TCP port 443 can reach the public endpoint.</p>
+<p>For private access, confirm that:</p>
+<ul>
+<li>the Private Endpoint is created;</li>
+<li>the connection is approved;</li>
+<li>the endpoint has a private IP address;</li>
+<li>required client networks can route to the endpoint.</li>
+</ul>
+<p>DNS and TLS validation are completed in the following steps.</p>
 <h2 id="next-step">Next step</h2>
-<p>After SSO is working, continue with <a href="../data-onboarding/">data onboarding</a>.</p>
+<p>Continue to <strong>Configure DNS</strong> for the endpoints you plan to use.</p>
 
   
   
@@ -2415,12 +2260,12 @@
   <aside class="md-source-file" aria-label="Document metadata">
     
       <span class="md-source-file__fact">
-        <strong>Last verified:</strong> 2026-08-18
+        <strong>Last verified:</strong> 2026-08-17
       </span>
     
     
       <span class="md-source-file__fact">
-        <strong>Published:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2026</span>
+        <strong>Published:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2026</span>
       </span>
     
     

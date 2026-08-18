@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.opsflw.io/elastic/latest/elastic-stack-deployment/single-sign-on/">
+        <link rel="canonical" href="https://docs.opsflw.io/elastic/latest/elastic-stack-deployment/manage-elastic-agents-with-fleet/">
       
       
-        <link rel="prev" href="../users-and-roles/">
+        <link rel="prev" href="../data-onboarding/">
       
       
-        <link rel="next" href="../data-onboarding/">
+        <link rel="next" href="../onboard-observability-data/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Configure single sign-on - Opsflw Managed Elasticsearch Platform</title>
+        <title>Manage Elastic Agents with Fleet - Opsflw Managed Elasticsearch Platform</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configure-single-sign-on" class="md-skip">
+        <a href="#manage-elastic-agents-with-fleet" class="md-skip">
           Skip to content
         </a>
       
@@ -138,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configure single sign-on
+              Manage Elastic Agents with Fleet
             
           </span>
         </div>
@@ -1086,8 +1086,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1108,11 +1106,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
@@ -1126,7 +1124,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Access & security
@@ -1158,30 +1156,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Configure single sign-on
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../single-sign-on/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1190,98 +1168,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Before you begin
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#register-the-application-in-microsoft-entra" class="md-nav__link">
-    <span class="md-ellipsis">
-      Register the application in Microsoft Entra
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-sso-through-ivedha-ai-chat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure SSO through iVedha AI chat
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-entra-groups-to-elastic-roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Map Entra groups to Elastic roles
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-single-sign-on" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test single sign-on
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-and-api-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application and API access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-sso-does-not-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      If SSO does not work
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next step
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1299,6 +1185,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1323,11 +1211,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" checked>
         
           
           <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
@@ -1341,7 +1229,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
             Data onboarding
@@ -1373,10 +1261,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../manage-elastic-agents-with-fleet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Manage Elastic Agents with Fleet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1385,6 +1293,212 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opentelemetry-is-the-common-telemetry-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenTelemetry is the common telemetry model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elastic-agent-is-the-collection-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elastic Agent is the collection layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fleet-provides-centralized-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fleet provides centralized management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understand-agent-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understand agent policies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-opentelemetry-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure OpenTelemetry collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure OpenTelemetry collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application telemetry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hosts-and-virtual-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosts and virtual machines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-opentelemetry-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an OpenTelemetry integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enroll-an-elastic-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enroll an Elastic Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-opentelemetry-ingestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify OpenTelemetry ingestion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-otel-native-data-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify OTel-native data streams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-collection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change collection configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitor-agent-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor agent health
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-agents-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage agents at scale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-elastic-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade Elastic Agents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-an-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove an agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-opentelemetry-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot OpenTelemetry collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next step
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2207,63 +2321,177 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-you-begin" class="md-nav__link">
+  <a href="#opentelemetry-is-the-common-telemetry-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Before you begin
+      OpenTelemetry is the common telemetry model
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#register-the-application-in-microsoft-entra" class="md-nav__link">
+  <a href="#elastic-agent-is-the-collection-layer" class="md-nav__link">
     <span class="md-ellipsis">
-      Register the application in Microsoft Entra
+      Elastic Agent is the collection layer
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-sso-through-ivedha-ai-chat" class="md-nav__link">
+  <a href="#fleet-provides-centralized-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure SSO through iVedha AI chat
+      Fleet provides centralized management
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#map-entra-groups-to-elastic-roles" class="md-nav__link">
+  <a href="#understand-agent-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Map Entra groups to Elastic roles
+      Understand agent policies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-single-sign-on" class="md-nav__link">
+  <a href="#configure-opentelemetry-collection" class="md-nav__link">
     <span class="md-ellipsis">
-      Test single sign-on
+      Configure OpenTelemetry collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure OpenTelemetry collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application telemetry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hosts-and-virtual-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosts and virtual machines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-opentelemetry-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an OpenTelemetry integration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-and-api-access" class="md-nav__link">
+  <a href="#enroll-an-elastic-agent" class="md-nav__link">
     <span class="md-ellipsis">
-      Application and API access
+      Enroll an Elastic Agent
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#if-sso-does-not-work" class="md-nav__link">
+  <a href="#verify-opentelemetry-ingestion" class="md-nav__link">
     <span class="md-ellipsis">
-      If SSO does not work
+      Verify OpenTelemetry ingestion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-otel-native-data-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify OTel-native data streams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-collection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change collection configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitor-agent-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor agent health
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-agents-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage agents at scale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-elastic-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade Elastic Agents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-an-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove an agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-opentelemetry-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot OpenTelemetry collection
     </span>
   </a>
   
@@ -2293,119 +2521,255 @@
                   
 
 
-<h1 id="configure-single-sign-on">Configure single sign-on</h1>
-<p>Use Microsoft Entra ID single sign-on to authenticate organization users to Kibana.</p>
-<p>Platform SSO configuration is performed through the iVedha AI chat:</p>
-<p><code>https://chat.ivedha.cloud</code></p>
-<p>Microsoft Entra authenticates the user. Elastic roles and role mappings determine what the authenticated user can access.</p>
-<h2 id="before-you-begin">Before you begin</h2>
-<p>Coordinate with:</p>
+<h1 id="manage-elastic-agents-with-fleet">Manage Elastic Agents with Fleet</h1>
+<p>The managed platform uses an <strong>OpenTelemetry-first observability architecture</strong>.</p>
+<p>For new observability workloads:</p>
 <ul>
-<li>a Microsoft Entra application administrator;</li>
-<li>an Elastic security administrator.</li>
+<li><strong>OpenTelemetry</strong> is the standard telemetry model for logs, metrics, and traces;</li>
+<li><strong>Elastic Agent</strong> is the standard collection and telemetry gateway layer;</li>
+<li><strong>Fleet</strong> centrally manages Elastic Agents, policies, and integrations;</li>
+<li><strong>Elasticsearch</strong> stores and analyzes the resulting telemetry;</li>
+<li><strong>Kibana</strong> provides visualization, investigation, and observability workflows.</li>
 </ul>
-<p>You will need:</p>
+<div class="highlight"><pre><span></span><code>Applications / Hosts / Kubernetes / Azure Services
+                         ↓
+                    Elastic Agent
+                         ↓
+             OpenTelemetry integrations
+                         ↓
+        OpenTelemetry logs, metrics, traces
+                         ↓
+                    Elasticsearch
+                         ↓
+                       Kibana
+</code></pre></div>
+<p>The goal is to normalize observability data around <strong>OpenTelemetry semantic
+conventions and OTel-native data streams</strong> regardless of where the telemetry
+originates.</p>
+<h2 id="opentelemetry-is-the-common-telemetry-model">OpenTelemetry is the common telemetry model</h2>
+<p>Logs, metrics, and traces should use OpenTelemetry conventions wherever
+supported.</p>
+<p>This provides a common representation for telemetry coming from applications,
+virtual machines, Kubernetes, Azure services, databases, middleware, network
+and security systems, and custom sources.</p>
+<p>Elastic integrations that still produce ECS-compatible events remain supported,
+but new observability designs should prefer OpenTelemetry-native telemetry where
+available.</p>
+<h2 id="elastic-agent-is-the-collection-layer">Elastic Agent is the collection layer</h2>
+<p>Elastic Agent provides the common collection layer for the managed
+observability platform.</p>
+<p>Depending on the workload, Elastic Agent can:</p>
 <ul>
-<li>your Microsoft Entra tenant ID;</li>
-<li>an Entra application registration;</li>
-<li>the application client ID;</li>
-<li>a client credential;</li>
-<li>the redirect URI provided for your deployment;</li>
-<li>the Entra groups that will be mapped to Elastic roles.</li>
+<li>receive OTLP telemetry from applications and collectors;</li>
+<li>collect host logs and metrics;</li>
+<li>collect Kubernetes telemetry;</li>
+<li>collect Azure service telemetry;</li>
+<li>run Elastic integrations;</li>
+<li>collect custom logs and metrics;</li>
+<li>enrich telemetry with infrastructure and resource metadata.</li>
 </ul>
-<p>Do not create the redirect URI from examples or naming conventions. Use the exact value provided for your deployment.</p>
-<h2 id="register-the-application-in-microsoft-entra">Register the application in Microsoft Entra</h2>
-<p>In Microsoft Entra:</p>
-<ol>
-<li>Open <strong>App registrations</strong>.</li>
-<li>Create an application registration for the Elastic platform.</li>
-<li>Configure the application as required by your organization's identity policy.</li>
-<li>Add the exact <strong>Web redirect URI</strong> provided for the deployment.</li>
-<li>Create the client credential required for the integration.</li>
-<li>Configure the user and group claims required for access mapping.</li>
-</ol>
-<p>Store the client secret securely.</p>
-<p>Do not place the client secret in documentation, tickets, email, or screenshots.</p>
-<h2 id="configure-sso-through-ivedha-ai-chat">Configure SSO through iVedha AI chat</h2>
-<ol>
-<li>Sign in to:</li>
-</ol>
-<p><code>https://chat.ivedha.cloud</code></p>
-<ol>
-<li>Select or identify the deployment.</li>
-<li>Ask the assistant to configure <strong>single sign-on</strong> or <strong>Microsoft Entra OIDC</strong>.</li>
-<li>Complete identity verification when requested.</li>
-<li>Provide the requested Entra configuration values.</li>
-<li>Provide the client credential only through the protected credential workflow.</li>
-<li>Review and confirm the requested change.</li>
-<li>Wait for the platform to apply and synchronize the SSO configuration.</li>
-</ol>
-<p>Allow a few minutes for the configuration to become active.</p>
-<h2 id="map-entra-groups-to-elastic-roles">Map Entra groups to Elastic roles</h2>
-<p>Successful authentication does not automatically grant access to Elasticsearch or Kibana.</p>
-<p>Create the required <a href="../users-and-roles/">Elastic roles</a>, then map approved Microsoft Entra groups to those roles.</p>
-<p>Typical mappings can provide:</p>
+<p>The objective is for the resulting observability data to align with
+OpenTelemetry conventions before it is analyzed in Elasticsearch.</p>
+<h2 id="fleet-provides-centralized-management">Fleet provides centralized management</h2>
+<p>Use <strong>Fleet</strong> in Kibana to manage Elastic Agents centrally.</p>
+<p>Fleet manages:</p>
 <ul>
-<li>read-only access;</li>
-<li>dashboard access;</li>
-<li>data administration;</li>
-<li>platform administration.</li>
+<li>agent enrollment;</li>
+<li>agent policies;</li>
+<li>OpenTelemetry integrations;</li>
+<li>Elastic integrations;</li>
+<li>configuration distribution;</li>
+<li>agent health;</li>
+<li>agent versions and upgrades;</li>
+<li>enrollment and removal.</li>
 </ul>
-<p>Use least-privilege mappings and avoid assigning broad administrative access to all authenticated users.</p>
-<h2 id="test-single-sign-on">Test single sign-on</h2>
-<p>Test with a normal user account before relying on SSO for administrative access.</p>
-<p>Confirm that:</p>
+<p>Avoid manually maintaining local configuration on Fleet-managed agents.</p>
+<h2 id="understand-agent-policies">Understand agent policies</h2>
+<p>Each Fleet-managed Elastic Agent is assigned to an <strong>agent policy</strong>.</p>
+<p>A policy defines the collection and OpenTelemetry configuration applied to a
+group of agents.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Kubernetes Policy
+ ├─ OpenTelemetry integration
+ ├─ Kubernetes telemetry
+ ├─ Application OTLP receiver
+ └─ Agent monitoring
+
+Linux Server Policy
+ ├─ OpenTelemetry integration
+ ├─ System logs
+ ├─ Host metrics
+ └─ Agent monitoring
+</code></pre></div>
+<p>Multiple agents can share the same policy. Use policies to group systems with
+similar telemetry requirements.</p>
+<h2 id="configure-opentelemetry-collection">Configure OpenTelemetry collection</h2>
+<p>For new observability workloads, first determine which OpenTelemetry signals are
+required:</p>
+<ul>
+<li>logs;</li>
+<li>metrics;</li>
+<li>traces.</li>
+</ul>
+<p>Then configure Elastic Agent to collect or receive those signals.</p>
+<h3 id="application-telemetry">Application telemetry</h3>
+<p>Applications instrumented with OpenTelemetry can send OTLP telemetry to an
+Elastic Agent configured with the appropriate OpenTelemetry integration.</p>
+<div class="highlight"><pre><span></span><code>Application
+    ↓ OTLP
+Elastic Agent
+    ↓
+Elasticsearch
+</code></pre></div>
+<h3 id="kubernetes">Kubernetes</h3>
+<p>Elastic Agent can collect Kubernetes infrastructure telemetry while also
+receiving OpenTelemetry telemetry from instrumented workloads.</p>
+<h3 id="hosts-and-virtual-machines">Hosts and virtual machines</h3>
+<p>Elastic Agent can collect host logs and metrics and normalize them into the
+observability pipeline.</p>
+<h3 id="azure-services">Azure services</h3>
+<p>Use supported Elastic Agent integrations to collect Azure telemetry and make it
+available alongside application and infrastructure telemetry.</p>
+<h2 id="add-an-opentelemetry-integration">Add an OpenTelemetry integration</h2>
+<p>In Kibana:</p>
 <ol>
-<li>opening Kibana redirects the user to Microsoft Entra;</li>
-<li>authentication completes successfully;</li>
-<li>the user returns to Kibana;</li>
-<li>the user can access only the intended Kibana spaces and Elasticsearch data;</li>
-<li>a user without an approved role mapping does not receive unintended access.</li>
+<li>Open <strong>Fleet</strong>.</li>
+<li>Open <strong>Integrations</strong>.</li>
+<li>Find the required OpenTelemetry integration.</li>
+<li>Configure the required signals and endpoints.</li>
+<li>Assign the integration to the appropriate agent policy.</li>
+<li>Save the policy.</li>
 </ol>
-<p>Keep the administrator credential available until SSO has been fully validated.</p>
-<h2 id="application-and-api-access">Application and API access</h2>
-<p>OIDC SSO is primarily intended for interactive Kibana users.</p>
-<p>Applications, integrations, and Elasticsearch REST clients should use an appropriate supported credential such as an API key rather than an interactive SSO login.</p>
-<h2 id="if-sso-does-not-work">If SSO does not work</h2>
-<p>Common causes include:</p>
-<table>
-<thead>
-<tr>
-<th>Symptom</th>
-<th>Check</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Entra reports a redirect URI mismatch</td>
-<td>Confirm the exact deployment-provided redirect URI is registered</td>
-</tr>
-<tr>
-<td>Authentication succeeds but Kibana denies access</td>
-<td>Check Entra group claims and Elastic role mappings</td>
-</tr>
-<tr>
-<td>Authentication fails after credential rotation</td>
-<td>Confirm the active client credential and allow time for synchronization</td>
-</tr>
-<tr>
-<td>User repeatedly returns to the sign-in page</td>
-<td>Check the Entra application configuration and deployment SSO settings</td>
-</tr>
-<tr>
-<td>Some users do not receive expected group access</td>
-<td>Confirm the required group claims are present</td>
-</tr>
-</tbody>
-</table>
+<p>Fleet distributes the updated configuration to all agents using that policy.</p>
+<h2 id="enroll-an-elastic-agent">Enroll an Elastic Agent</h2>
+<p>To add a collector or telemetry gateway:</p>
+<ol>
+<li>Open <strong>Fleet</strong> &gt; <strong>Agents</strong>.</li>
+<li>Select <strong>Add agent</strong>.</li>
+<li>Choose the appropriate agent policy.</li>
+<li>Follow the generated installation and enrollment instructions.</li>
+<li>Wait for the agent to appear in Fleet.</li>
+<li>Confirm that its status becomes <strong>Healthy</strong>.</li>
+</ol>
+<p>Use the Fleet endpoint and enrollment information provided for your deployment.
+Do not construct endpoints from internal Azure resource names.</p>
+<h2 id="verify-opentelemetry-ingestion">Verify OpenTelemetry ingestion</h2>
+<p>After the agent is healthy, verify that telemetry is reaching Elasticsearch.</p>
+<p>Check each signal you expect:</p>
+<ul>
+<li>logs;</li>
+<li>metrics;</li>
+<li>traces.</li>
+</ul>
+<p>Also verify important OpenTelemetry metadata such as:</p>
+<ul>
+<li><code>service.name</code>;</li>
+<li>service environment;</li>
+<li>host attributes;</li>
+<li>cloud attributes;</li>
+<li>Kubernetes attributes;</li>
+<li>resource attributes.</li>
+</ul>
+<p>The goal is not only to confirm that events arrive, but also that telemetry from
+different platforms follows a consistent OpenTelemetry model.</p>
+<h2 id="verify-otel-native-data-streams">Verify OTel-native data streams</h2>
+<p>Where OpenTelemetry-native ingestion is used, verify the expected
+signal-specific data streams.</p>
+<p>Typical patterns include:</p>
+<div class="highlight"><pre><span></span><code>logs-*.otel-*
+metrics-*.otel-*
+traces-*.otel-*
+</code></pre></div>
+<p>ECS-based streams can continue to exist for integrations that require
+compatibility with existing Elastic content.</p>
+<h2 id="change-collection-configuration">Change collection configuration</h2>
+<p>For a Fleet-managed agent, change telemetry configuration through the <strong>agent
+policy</strong>, not by editing local agent configuration.</p>
+<ol>
+<li>Open the appropriate policy.</li>
+<li>Modify the OpenTelemetry or Elastic integration.</li>
+<li>Save the policy.</li>
+<li>Wait for Fleet to distribute the update.</li>
+<li>Confirm that affected agents return to <strong>Healthy</strong>.</li>
+<li>Verify the resulting telemetry.</li>
+</ol>
+<p>A policy change can affect many agents, so confirm the policy scope before
+applying major changes.</p>
+<h2 id="monitor-agent-health">Monitor agent health</h2>
+<p>Use <strong>Fleet</strong> &gt; <strong>Agents</strong> to monitor:</p>
+<ul>
+<li>agent status;</li>
+<li>last check-in;</li>
+<li>policy assignment;</li>
+<li>agent version;</li>
+<li>configuration errors;</li>
+<li>upgrade state.</li>
+</ul>
+<p>A healthy agent should regularly check in and report <strong>Healthy</strong>.</p>
+<p>If an agent is healthy but telemetry is missing, investigate the integration
+and OpenTelemetry pipeline rather than the Fleet connection itself.</p>
+<h2 id="manage-agents-at-scale">Manage agents at scale</h2>
+<p>Use shared policies for systems with common telemetry requirements, such as:</p>
+<ul>
+<li>production Kubernetes;</li>
+<li>development Kubernetes;</li>
+<li>Linux servers;</li>
+<li>Windows servers;</li>
+<li>application telemetry gateways.</li>
+</ul>
+<p>Create separate policies when collection requirements are materially different.
+Avoid unnecessary one-agent policies.</p>
+<h2 id="upgrade-elastic-agents">Upgrade Elastic Agents</h2>
+<p>Fleet can centrally coordinate upgrades for supported Fleet-managed Elastic
+Agents.</p>
+<p>Use a staged approach:</p>
+<ol>
+<li>upgrade a representative group;</li>
+<li>confirm Fleet health;</li>
+<li>verify OpenTelemetry logs, metrics, and traces;</li>
+<li>confirm expected data streams and attributes;</li>
+<li>continue with the remaining agents.</li>
+</ol>
+<p>For Kubernetes deployments where Elastic Agent installation is controlled by
+GitOps or another deployment system, manage the runtime version through that
+deployment process while continuing to use Fleet for policies and integrations.</p>
+<h2 id="remove-an-agent">Remove an agent</h2>
+<p>When an Elastic Agent is no longer required:</p>
+<ol>
+<li>confirm the telemetry source is being retired or replaced;</li>
+<li>unenroll the agent from Fleet;</li>
+<li>remove the agent from the source environment using the supported process.</li>
+</ol>
+<p>Existing telemetry remains in Elasticsearch according to its lifecycle and
+retention configuration.</p>
+<h2 id="troubleshoot-opentelemetry-collection">Troubleshoot OpenTelemetry collection</h2>
+<p>If an agent cannot connect to Fleet, check:</p>
+<ul>
+<li>DNS;</li>
+<li>network connectivity;</li>
+<li>TLS trust;</li>
+<li>enrollment configuration.</li>
+</ul>
+<p>If the agent is healthy but telemetry is missing, check:</p>
+<ul>
+<li>the assigned policy;</li>
+<li>OpenTelemetry integration configuration;</li>
+<li>OTLP endpoint configuration;</li>
+<li>application exporter configuration;</li>
+<li>expected signal type;</li>
+<li>agent logs;</li>
+<li>expected OTel-native data streams.</li>
+</ul>
 <p>For assistance:</p>
 <ul>
 <li>AI chat: <code>https://chat.ivedha.cloud</code></li>
 <li>Support portal: <code>https://support.ivedha.com/</code></li>
 </ul>
-<p>Provide the deployment reference from your <strong>Your deployment is ready</strong> notification.</p>
+<p>Provide the deployment reference and affected Elastic Agent information. Do not
+include enrollment tokens, API keys, passwords, or other secrets.</p>
 <h2 id="next-step">Next step</h2>
-<p>After SSO is working, continue with <a href="../data-onboarding/">data onboarding</a>.</p>
+<p>After Fleet, Elastic Agent, and OpenTelemetry collection are configured,
+continue with <a href="../onboard-observability-data/">onboard observability data</a>.</p>
 
   
   
@@ -2420,7 +2784,7 @@
     
     
       <span class="md-source-file__fact">
-        <strong>Published:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2026</span>
+        <strong>Published:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2026</span>
       </span>
     
     
